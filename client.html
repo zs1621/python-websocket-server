@@ -47,9 +47,9 @@
     
     function output(str) {
       var log = document.getElementById("log");
-      var escaped = str.replace(/&/, "&amp;").replace(/</, "&lt;").
-        replace(/>/, "&gt;").replace(/"/, "&quot;"); // "
-      log.innerHTML = escaped + "<br>" + log.innerHTML;
+      // var escaped = str.replace(/&/, "&amp;").replace(/</, "&lt;").
+      //   replace(/>/, "&gt;").replace(/"/, "&quot;"); // "
+      log.innerHTML = log.innerHTML + "<br>" + str;
     }
 
   </script>
